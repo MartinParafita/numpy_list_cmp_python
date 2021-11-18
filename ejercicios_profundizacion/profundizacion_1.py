@@ -11,7 +11,8 @@
 # Requiere mayor tiempo de dedicación e investigación autodidacta.
 
 # IMPORTANTE: NO borrar los comentarios en VERDE o NARANJA
-
+import random
+import numpy as np
 '''
 Enunciado:
 Empecemos a jugar con las listas y su métodos, el objetivo
@@ -32,5 +33,16 @@ if __name__ == '__main__':
     print('Comenzamos a divertirnos!')
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
+
+    lista = [random.randint(1,10) for x in range(3)]
+    print('La lista de numeros es: ',lista)
+    
+    sumatoria = np.sum(lista)
+    
+    if sumatoria <= 21:
+        print('La sumatoria es: ',sumatoria)
+    else:
+        print('Perdiste')
+
 
     print("terminamos")

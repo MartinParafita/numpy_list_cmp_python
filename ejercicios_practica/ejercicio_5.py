@@ -27,7 +27,9 @@ if __name__ == '__main__':
     # los ID entre el 1 y 10.
     # De la lista resultante informar cuantas personas/personal
     # comprendido en dicho rango pasó por ese molinete
-
+    personal_1_10 = [x for x in accesos if x <= 10 ]
+    print(personal_1_10)
+    print('La cantidad de personal que ingreso es: ',len(personal_1_10))
     # personal_1_10 = [.....]
 
     # 2)
@@ -39,6 +41,11 @@ if __name__ == '__main__':
     # aprobados en "id_validos".
     # TIP: Utilizar el operador "in" para chequear si un ID de accesos está
     # dentro de "id_validos"
+    personal_autorizado = [x for x in accesos if x in id_validos]
+
+    # NOTA MENTAL, PARA QUE TOME SOLO LOS VALORES QUE DESEO, EL IF VA LUEGO DEL FOR
+    
+    print(personal_autorizado)
 
     # personal_valido = [.....]
 
